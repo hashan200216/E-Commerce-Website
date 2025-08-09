@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Add to Cart with Images</title>
+    <link rel="stylesheet" href="add2.css">
+</head>
+<body style="background-color: #6e4c4c;">
+    <div class="container">
+        <h1>Product List</h1>
+        <div id="productList" class="product-list">
+            <!-- Products will be populated here by JavaScript -->
+        </div>
+
+        <h1>Shopping Cart</h1>
+        <div id="cart" class="cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Image</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+                    <tr>
+                        <td colspan="6">Your cart is empty.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="cartTotal" class="cart-total">Total: $0.00</div>
+        </div>
+    </div>
+    <script src="add.js"></script>
+</body>
+</html>

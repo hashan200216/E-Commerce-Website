@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"href="apa.css">
+
+</head>
+<body>
+
+
+<div class="container">
+    <div class="admin-product-form-container">
+
+    <form action="<?php$_SERVER['PHP-self']?>"method="post" enctypr="multipart/form-data">
+    <h3>add new product</h3>
+    <input type="text" placeholder="enter product name" name="product_name" class="box">
+    <input type="number" placeholder="enter product price" name="product_price" class="box">
+     <input type="number" placeholder="enter product code.NO" name="product_code.No" class="box">
+    <input type="file" accept="image/png,image/jpeg,image/jpg" name="product_image" class="box">
+    <input type="submit" class="btn" name="add_product" value="add product">
+
+
+</body>
+</html>
